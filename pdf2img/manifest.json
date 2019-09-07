@@ -1,0 +1,19 @@
+{
+    "name": "PDF转换图片",
+    "description" : "PDF转换图片",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "img/icon.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+K",
+            "mac": "MacCtrl+Shift+K"
+          },
+          "description": "Opens index.html"
+        }
+      }
+  }

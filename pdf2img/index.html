@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF转换图片</title>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jszip.min.js"></script>
+    <script type="text/javascript" src="./js/FileSaver.js"></script>
+    <script type="text/javascript" src="./js/pdf.js"></script>
+    <script type="text/javascript" src="./js/pdf.worker.js"></script>
+    <script src="./js/btn.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <div class="box">
+        <div class="box__header">PDF 转换图片</div>
+        <div class="box__center">
+            <div class="box__progress--green">
+                <div class="box__progress-btn" id="main_btn">上传PDF</div>
+                <input type="file" id="file-btn" accept="application/pdf">
+            </div>
+        </div>
+        <div class="box__tip" id="abnormal_tip"></div>
+        <div class="box__bottom">
+            <div class="box__btn" id="jpg">另存为jpg</div>
+            <div class="box__btn" id="png">另存为png</div>
+        </div>
+        <div id='container'></div>
+    </div>
+</body>
+</html>
